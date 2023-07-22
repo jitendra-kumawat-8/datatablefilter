@@ -13,10 +13,12 @@ const App: React.FC = () => {
 
   useEffect(() => {
     fetchCSVData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     applyFilters();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedFilters]);
 
   const fetchCSVData = () => {
